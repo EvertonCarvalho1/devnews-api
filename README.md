@@ -13,7 +13,7 @@
 
 Esta api fornece tudo o que é necessário para cadastrar e gerenciar notícias.
 
-Para ver o **App web**, clique aqui: [DevNews Web](https://github.com/EvertonCarvalho1/) <br />
+Para ver o **App web**, clique aqui: [DevNews Web](https://github.com/EvertonCarvalho1/DevNews-WEB) <br />
 
 
 ### 🛠 Tecnologias
