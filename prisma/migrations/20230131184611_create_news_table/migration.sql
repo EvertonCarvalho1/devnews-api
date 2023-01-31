@@ -5,7 +5,7 @@ CREATE TABLE "news" (
     "subtitle" TEXT NOT NULL,
     "content" TEXT NOT NULL,
     "created_at" TIMESTAMP(3) DEFAULT CURRENT_TIMESTAMP,
-    "updated" TIMESTAMP(3) DEFAULT CURRENT_TIMESTAMP,
+    "updated_at" TIMESTAMP(3) DEFAULT CURRENT_TIMESTAMP,
 
     CONSTRAINT "news_pkey" PRIMARY KEY ("id")
 );
