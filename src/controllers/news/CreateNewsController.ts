@@ -1,10 +1,13 @@
 import { Request, Response } from 'express';
-import { CreateNewsService } from '../services/news/CreateNewsService'
+import { CreateNewsService } from '../../services/news/CreateNewsService'
 
 class CreateNewsController {
     async handle(req: Request, res: Response) {
-        const { title, subtitle, content } = req.body;
-
+        const {
+            title,
+            subtitle,
+            content
+        } = req.body;
 
         const createNewsService = new CreateNewsService();
 
