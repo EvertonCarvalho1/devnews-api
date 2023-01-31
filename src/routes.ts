@@ -1,10 +1,12 @@
-import { Router, Request, Response } from 'express';
+import { Router } from 'express';
+
+import { CreateNewsController } from './controllers/CreateNewsController';
+
 
 const router = Router();
 
-router.get('/teste', (req: Request, res: Response) => {
-    throw new Error("Erro ao fazer essa requisição");
+const createNewsController = new CreateNewsController();
 
-})
+router.post('/news', createNewsController.handle)
 
 export { router };
