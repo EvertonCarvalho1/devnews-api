@@ -13,6 +13,12 @@ class CreateNewsService {
         content
     }: CreateNewsRequest) {
 
+        const newsAlredyExists = await prismaClient.news.findFirst({
+            where: {
+                title: title
+            }
+        });
+
         if (!title) {
             throw new Error("Enter the title of the news");
         }
@@ -24,12 +30,6 @@ class CreateNewsService {
         if (!content) {
             throw new Error("Inform the news content");
         }
-
-        const newsAlredyExists = await prismaClient.news.findFirst({
-            where: {
-                title: title
-            }
-        });
 
         if (newsAlredyExists) {
             throw new Error("News already exists");
