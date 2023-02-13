@@ -1,4 +1,4 @@
-<h1 style="text-align: center; font-weight: bold;">DevNews</h1>
+<h1 style="text-align: center; font-weight: bold;">DevNews-API</h1>
 
 ## Demo 📸
 
@@ -13,20 +13,21 @@
 
 Esta api fornece tudo o que é necessário para cadastrar e gerenciar notícias.
 
-Para ver o **App web**, clique aqui: [DevNews Web](https://github.com/EvertonCarvalho1/DevNews-WEB) <br />
+Para ver o **App web**, clique aqui: [DevNews Web](https://github.com/EvertonCarvalho1/devnews-web) <br />
 
 
 ### 🛠 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-- React
-- React Hooks
-- Node.js
-- Express.js
+- NodeJS
+- Express
 - Cors
 - Moment
-- Axios
+- Express-async-errors
+- Prisma
+- PostgreSQL
+- Typescript
 
 ---
 
@@ -40,15 +41,15 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 
 ```bash
 # Clone este repositório
-$ git clone https://github.com/EvertonCarvalho1/DevNews-API.git
+$ git clone https://github.com/EvertonCarvalho1/devnews-api.git
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd DevNews-API
+$ cd devnews-api
 
 # Instale as dependências
-$ npm install
+$ yarn
 
 # Execute a aplicação em modo de desenvolvimento
-$ npm start
+$ yarn dev
 
 ```
